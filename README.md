@@ -1,4 +1,4 @@
-# PYTHON [FOOTBALL PLAYER CLASSIFICATION]
+# [PYTHON] FOOTBALL PLAYER CLASSIFICATION
 
 # Introduction
 - The gif below illustrate the dataset i will working at
