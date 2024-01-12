@@ -12,8 +12,8 @@
 - tensorboard
 
 # Dataset
-- My dataset includes 16 classes, jersy_number from 1 to 19 except 16-17-18
-- This is hơw my dataset path working
+- My dataset include 16 classes, jersey_number from 1 to 19 without 16-17-18
+- This is how my dataset-path changing working:
 
                  Football-dataset
                   ├── Train
@@ -25,6 +25,13 @@
                       ├── json_file 
                       ├── match_videos
 
+- Here is a orginal-image as known as a frame was cutting from one of these orginal-videos:
+
+![Screenshot from 2024-01-12 20-45-54](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/6ad6cf7c-921b-44eb-8135-d197e4a81245)
+
+- All the images i cropped from the original-image above:
+
+     ![Jerseynumber6online-video-cutter com-ezgif com-gif-maker](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/b98c3b0e-8b0c-4353-8d79-a6b1dd75790d)
 
 # Setting
 - Typing and Changing from your keyboard by argparse lib
