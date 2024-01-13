@@ -12,17 +12,17 @@
 - tensorboard
 
 # Dataset
-- My dataset include 16 classes, jersey_number from 1 to 19 without 16-17-18
-- This is how my dataset-path changing working:
+- My dataset includess 16 classes, jersey_number from 1 to 19 without 16-17-18
+- This is how my dataset-path changing works:
 
                  Football-dataset
                   ├── Train
-                  │   ├── json_file  
+                  │   ├── json_file (annotation file)  
                   │   ├── match_videos
                   │
                   │
                   └── Test
-                      ├── json_file 
+                      ├── json_file (annotation file) 
                       ├── match_videos
 
 - Here is a orginal-image as known as a frame was cutting from one of these orginal-videos:
@@ -34,9 +34,9 @@
      ![Jerseynumber6online-video-cutter com-ezgif com-gif-maker](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/b98c3b0e-8b0c-4353-8d79-a6b1dd75790d)
 
 # Setting
-- Typing and Changing from your keyboard by argparse lib
+- Typing and Changing params from your keyboard by argparse lib
 - Model structure: I was built 2 types of model were CNN model by myself and Resnet34 to compare performence
-- Data augmentation: I performed dataset augmentation, to make sure that you could re-trained my model with small dataset (~450.000 cropped-images or ~4500 orginal-images). Techniques applied here includes RandomAffine, Resize and ColorJitter
+- Data augmentation: I performed dataset augmentation, to make sure that i could increase my model performance (~450.000 cropped-images or ~4500 orginal-images).Despite, a lot of training-images but the rate of quality very low. Techniques applied here includes RandomAffine, Resize and ColorJitter
 - Loss: The loss function i used is CrossEntropy
 - Optimizer: I used SGD optimizer
 
@@ -60,10 +60,9 @@
 - Validation loss
 ![transfer learning val losss](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/ebd2ac1e-d029-4e8a-9623-f3f438a5f002)
 
-- My comment: Although, i was using pre-trained model is Resnet34. My CNN model still good at accuracy. It seems like my validation loss tend to overfitting cause all of training images used to training was cropped from a original-images so the quality
-very low and a part of the jersey number was covering by player hand or the camera putted on the wrong place.
+- My comment: Although I was using a pre-trained model, Resnet34, my CNN model still performs well in terms of accuracy. It appears that my validation loss tends to indicate overfitting, as all the training images used were cropped from original images, resulting in low quality. Additionally, a portion of the jersey number was covered by the player's hand or the camera was placed in an incorrect position.
 
-# Results
+# Result
 - test-image:
 ![Cristiano-Ronaldo-back-vs-Atletico-Madrid](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/53bb1f10-9b27-4698-8a80-6434fa883300)
 
