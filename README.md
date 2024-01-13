@@ -1,7 +1,7 @@
 # [PYTHON] FOOTBALL PLAYER CLASSIFICATION
 
 # Introduction
-- The gif below illustrate the dataset i will working at
+- The gif below illustrate the dataset i will be working at
 - I would like to detect the football-player-jersey number with the assumption of the problem is ground truth bounding box
 
 ![PixellotAir-Footballonline-video-cutter com-ezgif com-resize(1)](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/4cad3d45-8b67-462b-a9c0-fd924cddc50c)
