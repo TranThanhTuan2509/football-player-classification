@@ -66,7 +66,7 @@
 - test-image:
 ![Cristiano-Ronaldo-back-vs-Atletico-Madrid](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/53bb1f10-9b27-4698-8a80-6434fa883300)
 
-- Results:
+- Result:
 ![Screenshot from 2024-01-21 14-53-36](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/6be08047-7a7a-4b9c-b0f3-83bd9973b0a6)
 
 
