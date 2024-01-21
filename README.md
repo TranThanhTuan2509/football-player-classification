@@ -66,8 +66,14 @@
 - test-image:
 ![Cristiano-Ronaldo-back-vs-Atletico-Madrid](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/53bb1f10-9b27-4698-8a80-6434fa883300)
 
-------------------------------------------------------Not done yet------------------------
+- Results:
+![Screenshot from 2024-01-21 14-53-36](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/6be08047-7a7a-4b9c-b0f3-83bd9973b0a6)
 
 
+- My comment: My test image and the result have the big difference. Like i said above the accuracy of my CNN model very low so the wrong result is unsurprised.
+
+# In Conclusion
+
+- This project has only purpose is summarize all knowledge that i learned about deep learning especially about images classification. I appreciate who take your time for my project.
 
 
