@@ -4,12 +4,12 @@ import torch.nn as nn
 from models import CNN
 import argparse
 import cv2
-from classes import classes
-
+classes = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+# This classes just to illustrate that we have 20 players
 
 def get_args():
     parser = argparse.ArgumentParser(description="Train an CNN model")
-    parser.add_argument("--image_path", "-i", type=str, default="/home/acer/Pictures/r1149798_1296x729_16-9.jpg")
+    parser.add_argument("--image_path", "-i", type=str, default="/home/acer/Pictures/Cristiano-Ronaldo-back-vs-Atletico-Madrid.jpg")
     parser.add_argument("--image_size", "-s", type=int, default=224)
     parser.add_argument("--checkpoint_path", "-m", type=str, default="football_football_transfer_learning_checkpoints/best.pt")
     args = parser.parse_args()
@@ -20,14 +20,13 @@ def test(args):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = CNN(num_classes=20).to(device)
     checkpoint = torch.load(args.checkpoint_path, map_location=torch.device('cpu'))
-    model.load_state_dict(checkpoint["state_dict"])
+    model.load_state_dict(checkpoint["state_dict"], strict=False)
     model.eval()
     image = cv2.imread(args.image_path)
     # Preprocess image
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     image = cv2.resize(image, (args.image_size, args.image_size))
     image = np.transpose(image, (2, 0, 1))/255.
-    # image = np.expand_dims(image, axis=0)
     image = image[None, :, :, :]
     image = torch.from_numpy(image).float()
     image = image.to(device)
@@ -35,7 +34,7 @@ def test(args):
     with torch.no_grad():
         output = model(image)
     predicted_class = classes[torch.argmax(output)]
-    print("The image is about {} with probability of {}".format(predicted_class))
+    print("The prediction result of model is {}".format(predicted_class))
 
 
 
