@@ -3,6 +3,10 @@
 # Introduction
 - The gif below illustrates the dataset I will be working with
 - I would like to detect the football-player-jersey number with the assumption of the problem is ground truth bounding box
+
+- My second model explantion (classifier model):
+
+- If you wanna using the second model you must change path and call lib by yourself.
 - My result model has 3 outputs (digit, digits, unknown) - (11 numbers from 0 to 9) - (color 0 - 1 black - white)
 - if the first output is 0 and the second output from 0 to 9 it means the result is 0 to 9, but if the first output is 1 and the second output from 0 to 9 it means the number jersey is 10 to 19.
 
