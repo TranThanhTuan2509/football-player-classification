@@ -81,7 +81,7 @@
 
 - result:
 ![Screenshot from 2024-03-07 15-54-46](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/5374af9b-987c-4fdf-93dc-ce863cc21d3e)
-- 0 stands for digit, 5 stands for number jersey is 7, 1 is white color
+- 0 stands for digit, 5 stands for number jersey is 5 but the acctual number is 3, 1 is white color
 - My comment: My test image and the result have the big difference. Like i said above the accuracy of my CNN model very low so the wrong result was unsurprised.
 
 # In Conclusion
