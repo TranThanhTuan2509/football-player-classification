@@ -3,6 +3,7 @@
 # Introduction
 - The gif below illustrates the dataset I will be working with
 - I would like to detect the football-player-jersey number with the assumption of the problem is ground truth bounding box
+- My result model has 3 outputs (digit, digits, unknown) - (11 numbers from 0 to 9) - (color 0 - 1)
 
 ![PixellotAir-Footballonline-video-cutter com-ezgif com-resize(1)](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/4cad3d45-8b67-462b-a9c0-fd924cddc50c)
 
@@ -67,7 +68,8 @@
 ![Cristiano-Ronaldo-back-vs-Atletico-Madrid](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/53bb1f10-9b27-4698-8a80-6434fa883300)
 
 - Result:
-![Screenshot from 2024-01-21 14-53-36](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/6be08047-7a7a-4b9c-b0f3-83bd9973b0a6)
+![Screenshot from 2024-03-07 13-02-35](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/f91cd8bf-0ac4-4194-abb0-bbd20dae276a)
+- 0 stands for digit, 7 stands for number jersey is 7, 1 is white color
 
 
 - My comment: My test image and the result have the big difference. Like i said above the accuracy of my CNN model very low so the wrong result was unsurprised.
