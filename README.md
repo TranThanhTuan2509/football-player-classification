@@ -3,7 +3,8 @@
 # Introduction
 - The gif below illustrates the dataset I will be working with
 - I would like to detect the football-player-jersey number with the assumption of the problem is ground truth bounding box
-- My result model has 3 outputs (digit, digits, unknown) - (11 numbers from 0 to 9) - (color 0 - 1)
+- My result model has 3 outputs (digit, digits, unknown) - (11 numbers from 0 to 9) - (color 0 - 1 black - white)
+- if the first output is 0 and the second output from 0 to 9 it means the result is 0 to 9, but if the first output is 1 and the second output from 0 to 9 it means the number jersey is 10 to 19.
 
 ![PixellotAir-Footballonline-video-cutter com-ezgif com-resize(1)](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/4cad3d45-8b67-462b-a9c0-fd924cddc50c)
 
@@ -67,11 +68,16 @@
 - test-image:
 ![Cristiano-Ronaldo-back-vs-Atletico-Madrid](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/53bb1f10-9b27-4698-8a80-6434fa883300)
 
-- Result:
+- result:
 ![Screenshot from 2024-03-07 13-02-35](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/f91cd8bf-0ac4-4194-abb0-bbd20dae276a)
 - 0 stands for digit, 7 stands for number jersey is 7, 1 is white color
+- test-image:
 
+![croppedimage](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/b92f3be8-a2e1-4777-a153-5c1654329bb7)
 
+- result:
+![Screenshot from 2024-03-07 15-54-46](https://github.com/TranThanhTuan2509/football-player-classification/assets/119112296/5374af9b-987c-4fdf-93dc-ce863cc21d3e)
+- 0 stands for digit, 5 stands for number jersey is 7, 1 is white color
 - My comment: My test image and the result have the big difference. Like i said above the accuracy of my CNN model very low so the wrong result was unsurprised.
 
 # In Conclusion
